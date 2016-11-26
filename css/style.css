@@ -1,0 +1,126 @@
+body {
+	margin:0;
+}
+
+
+.container {
+	width:1060px;
+	height:500px;
+	margin:auto;
+}
+
+@font-face {
+    font-family:segoe;
+    src: url(../fonts/segoeuil.ttf);
+}
+
+.header {
+	height:138px;
+	width:1060px;
+	background-image:url(../img/header.png);
+}
+
+.content h2 {
+	font-family:segoe;
+	color:#000;
+	font-weight:300;
+	font-size:15px;
+	margin:0;
+}
+
+.content h1 {
+	font-family:segoe;
+	color:#000;
+	font-weight:700;
+	font-size:23px;
+	margin:0;
+	background:#000;
+	color:#fff;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:center;
+}
+
+.input {
+	border-radius:5px;
+	border:0;
+	border:1px solid #848484;
+	padding:10px;
+	margin-top:5px;
+	margin-bottom:10px;
+	width:1040px;
+}
+
+.content label {
+	font-family:segoe;
+	color:#000;
+	font-weight:700;
+	font-size:18px;
+	margin:0;
+}
+
+.text_area {
+		border-radius:5px;
+	border:0;
+	border:1px solid #848484;
+	padding:10px;
+	margin-top:5px;
+	margin-bottom:10px;
+	width:1040px;
+}
+
+.submit {
+	width:1040px;
+	padding:10px;
+	border:0;
+	border:1px solid #848484;
+	background:#000;
+	border-radius:5px;
+	font-family:segoe;
+	font-size:20px;
+	margin-bottom:20px;
+	color:#fff;
+}
+
+.submit:hover {
+	background:#fff;
+	border:1px solid #063c92;
+	color:#063c92;
+}
+
+.box {
+font-family:segoe;
+}
+
+.box a{
+text-decoration:none;
+color:#000;
+}
+
+.box h1{
+margin:0;
+}
+
+.table_button {
+	color:#fff;
+}
+
+.content td {
+	font-family:segoe;
+	font-weight:500;
+}
+
+.content a {
+	text-decoration:none;
+}
+
+.ip_button {
+	font-family:segoe;
+	background:#000;
+	color:#fff;
+}
+
+#select{
+	margin-top: 10px;
+	padding-top: 10px;
+}
