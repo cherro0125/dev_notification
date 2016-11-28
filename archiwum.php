@@ -23,8 +23,17 @@ $userdata = get_user_data();
 		<?php
 		if(!empty($_SESSION['username']))
 		{
+			echo "<br><br><fieldset>";
 			echo "<span>Zalogowano jako ".$_SESSION['username']." </span>";
+			if($_SESSION['department']!="RCSD")
+			{
 			echo "<span> Wydział:  ".$_SESSION['department']."</span>";
+			}
+			else
+			{
+			echo "<span>Wydział: Red County Sherrif's Department</span>";
+			}
+			echo "</fieldset>";
 		}
 
 		?>
@@ -50,7 +59,14 @@ echo "</br></br><div class='tabela'><tr bgcolor='#13469b'><td width='150'><font 
         echo "<td width='150'>".$r['name']."</td>"; 
 	echo "<td width='220'>".$r['data']."</td>"; 
 	echo "<td width='250'>".$r['status']."</td>"; 
+	if($r['wydzial']!="RCSD")
+	{
 	echo "<td width='350'>".$r['wydzial']."</td>"; 
+	}
+	else
+	{
+	echo "<td width='350'>Red County Sherrif's Department</td>";
+	}
 	echo "<td width='50' bgcolor='#13469b'><a href='view.php?id=".$r['id']."'><div class='table_button'>WYSWIETL</div></a></td>"; 
     } 
     echo "</table></div></center></div>"; 

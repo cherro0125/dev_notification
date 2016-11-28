@@ -21,7 +21,10 @@ $userdata = get_user_data();
 	 $zapytanie = mysql_query("select * from wpisy
 where id={$_GET['id']}") or die("nie ma danych");
 	$r = mysql_fetch_assoc($zapytanie);
-	
+	if($r['wydzial']=="RCSD")
+{
+	$r['wydzial']= "Red County Sherrif's Department";
+}
 	echo "<h1><a href=".$r['global'].">".$r['name']."</h1></a>";
 	echo "<form method='post'>";
 	echo "<input type='submit' name='usun' value='USUN'>";
@@ -31,6 +34,7 @@ where id={$_GET['id']}") or die("nie ma danych");
 	echo "</form>";
 	echo "<hr>";
 	echo "<b>STATUS:</b><b> ".$r['status'].' '.$r['edit']."</b></br>";
+	
 	echo "<b>WYDZIAŁ:</b> ".$r['wydzial']."</br>";
 	echo "<hr>";
 	echo "<b>IP:</b>  ".$r['ip']."</br>";
@@ -85,8 +89,8 @@ if(isset($_POST['wydzial'])){
 			
 		 <form method="post">
   		 <select name="wydzialy">
-		 <option value="Red County Sheriff's Department</font>">Red County Sheriff's Department</option>
-                 <option value="Los Santos Police Department</font>">Los Santos Police Department</option>
+		 <option value="RCSD">Red County Sheriff's Department</option>
+                 <option value="Los Santos Police Department">Los Santos Police Department</option>
     	 <option value="Federal Bureau of Investigation">Federal Bureau of Investigation</option>
   	     </select>
   		 <input type="submit" name="zatwierdz_wydzial" value="Zatwierdz">

@@ -38,7 +38,7 @@ if(isset($_SESSION['department'])|| $_SESSION['department']=="Admin")
             <label for="wydzial">Wydział:</label><br><br>
             <select id="wydzial" name="department" required>
             <option value="Los Santos Police Department">Los Santos Police Department</option>
-            <option value="Red County Sheriff's Department">Red County Sheriff's Department</option>
+            <option value="RCSD">Red County Sheriff's Department</option>
             <option value="Federal Bureau of Investigation">Federal Bureau of Investigation</option>
 
 
