@@ -47,9 +47,10 @@ $userdata = get_user_data();
 			$zapytanko2 = "SELECT * FROM blockip WHERE ip='$ip'";
 			$wynik2 = mysql_query($zapytanko2);
 			
-			if (mysql_query($zapytanko2) <= 1) {
-		$zapytanie = "INSERT INTO blockip SET ip='$ip', description='$description', host='$host', data='$data'";
- 		$wynik = mysql_query($zapytanie) or die ('Nie dodano rekordu, błąd :'. mysql_error());
+			if (mysql_query($zapytanko2) >= 1) {
+	//	$zapytanie = "INSERT INTO blockip values ('NULL','".$ip."','".$description."','".$host."','".$data."')";
+ 		$zapytanie = "INSERT INTO blockip (`id`, `ip`, `host`, `description`, `data`) VALUES (NULL,'$ip','$host','$description','$data')";	
+	$wynik = mysql_query($zapytanie) or die ('Nie dodano rekordu, błąd :'. mysql_error());
 		} else {
 							echo '<script language="javascript">';
 			echo 'alert("Wpis już istnieje!")';

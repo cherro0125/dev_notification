@@ -27,7 +27,7 @@ where id={$_GET['id']}") or die("nie ma danych");
 }
 	echo "<h1><a href=".$r['global'].">".$r['name']."</h1></a>";
 	echo "<form method='post'>";
-	echo "<input type='submit' name='usun' value='USUN'>";
+	echo "<input type='submit'  name='usun' value='USUN'>";
 	echo "<input type='submit' name='przeczytano' value='ZMIEŃ STATUS'>";
     echo "<input type='submit' name='wydzial' value='ZMIEŃ WYDZIAŁ'>";
 	echo "<input type='submit' name='wroc' value='WRÓĆ'>";

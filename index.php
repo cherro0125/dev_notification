@@ -47,9 +47,11 @@ function zliczaj(nr_f, nr_l, nr_t) {
 		<div class="header"></div><hr>
 		<div class="content">
 			<h2>
-			Prosimy korzystać z tej strony tylko i <b>WYŁĄCZNIE</b> do zgłaszania podejrzeń terroryzmu, działalności przestępczej bądź jeżeli byli państwo bezpośrednimi świadkami przestępstwa. Zgłoszenie wraz z danymi będzie rozpatrywanie niezwłocznie przez administratora. W formularzu należy umieścić prawdziwe dane, aby funkcjonariusze publiczni mogli zająć się zgłoszeniem oraz rozpocząć procedury związane ze sprawą. Fałszywe, nierealne zgłoszenia będą podlegały karze grzywny oraz aresztu.
+			Prosimy o korzystanie z tej strony w sposób uprzednio przemyślany, gdyż każdy, kto nieumiejętnie posługuje się elektronicznym systemem zgłoszeń przestępstw, włączając w to celowe operowanie fałszywymi informacjami, podlega karze grzywny wynoszącej od $2000 do $8000 (art. 1 §6 kk).
+
+Zgłaszając występki, podejrzenia o złamaniu prawa lub inne formy naruszeń ładu publicznego, bądź jeżeli byli państwo bezpośrednimi świadkami przestępstwa, prosimy o wysłanie zgłoszenia odpowiedniemu organowi ścigania, sugerując się hierarchicznością i wagą zaistniałej sytuacji. W formularzu należy umieścić prawdziwe dane, aby funkcjonariusze publiczni mogli zająć się zgłoszeniem oraz rozpocząć procedury związane ze sprawą.
     
-    </br></br><b>*Za istotne oraz bardzo pomocne informacje FBI,LSPD oraz RCSD jest w stanie wypłacić wysokie nagrody pieniężne.</b>
+    </br></br><b>*Za pomocne i trafne informacje FBI, LSPD oraz RCSD jest w stanie wypłacić wysokie nagrody pieniężne.</b>
 			</h2>
 			
 			<form method="post" action="add.php">

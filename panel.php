@@ -26,17 +26,17 @@ $userdata = get_user_data();
 		}
 		if(!empty($_SESSION['username']))
 		{
-		echo "<br><br><fieldset>";		
-		echo "<span>Zalogowano jako ".$_SESSION['username']." </span>";
+		echo "<br><br><fieldset><center>";		
+		echo "<span><b>Zalogowano jako</b><i> ".$_SESSION['username']."</i> </span>";
 			if($_SESSION['department']!="RCSD")
 			{
-			echo "<span> Wydział:  ".$_SESSION['department']."</span>";
+			echo "<span><b> Wydział:</b>  ".$_SESSION['department']."</span>";
 			}
 			else
 			{
-			echo "<span>Wydział: Red Country Sherrif's Department</span>";
+			echo "<span><b>Wydział:</b> Red Country Sherrif's Department</span>";
 			}
-			echo "</fieldset>";
+			echo "</center></fieldset>";
 		}
 
 		?>

@@ -25,7 +25,7 @@ function sprawdz_ban(){
 	$row = mysql_fetch_assoc($wynik);	
 	$ipk = $row['ip'];
 	if(($ipk)==($ip)){
-		echo "Twój adres IP jest zbanowany. Skontaktuj się z Administratorem.";
+		echo "masz bana phah";
 		die();
 	}
 	
@@ -33,7 +33,7 @@ function sprawdz_ban(){
 	$row = mysql_fetch_assoc($wynik);	
 	$hostk = $row['host'];
 	if(($hostk)==($host)){
-		echo "Twój adres IP jest zbanowany. Skontaktuj się z Administratorem.";
+		echo "masz bana phah";
 		die();
 	}
 }
